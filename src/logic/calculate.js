@@ -81,7 +81,7 @@ export default function calculate(obj, buttonName) {
   if (buttonName === "=") {
     if (obj.next && obj.operation) {
       return {
-        total: operate(obj.total, obj.next, obj.operation),
+        total: operate(obj.total, 2, obj.operation),
         next: null,
         operation: null,
       };
